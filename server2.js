@@ -11,7 +11,8 @@ app.use(cors({
   origin: [
     'http://localhost:5500',
     'http://127.0.0.1:5500',
-    'http://localhost:3003'
+    'http://localhost:3003',
+    'https://tu-frontend-url.com'
   ],
   credentials: false,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -249,9 +250,9 @@ app.get('/api/sensores-info', (req, res) => {
   }
 });
 
-// Ruta para servir sensores.html
+// API básica para verificar que el servidor funciona
 app.get('/', (req, res) => {
-  res.sendFile('sensores.html', { root: '.' });
+  res.json({ message: 'Servidor de sensores funcionando', status: 'OK' });
 });
 
 // API para obtener datos paginados
