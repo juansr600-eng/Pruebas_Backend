@@ -12,7 +12,7 @@ app.use(cors({
     'http://localhost:5500',
     'http://127.0.0.1:5500',
     'http://localhost:3003',
-    'https://tu-frontend-url.com'
+    'https://pruebas-frontend.onrender.com'
   ],
   credentials: false,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
