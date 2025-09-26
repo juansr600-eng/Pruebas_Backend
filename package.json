@@ -5,7 +5,7 @@
   "main": "server2.js",
   "type": "module",
   "scripts": {
-    "start": "node server2.js"
+    "start": "node sensores-backend/server2.js"
   },
   "dependencies": {
     "express": "^4.18.0",
